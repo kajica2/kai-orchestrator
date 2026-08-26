@@ -1,0 +1,7 @@
+# Ignore nested .git dirs and HF space build artifacts
+spaces/*/.git/
+spaces/*/.gitignore
+**/__pycache__/
+**/node_modules/
+**/.venv/
+**/.gradio/
