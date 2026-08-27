@@ -1,6 +1,16 @@
-# Ignore nested .git dirs and HF space build artifacts
+# Spaces are separate git checkouts (each with its own .git/ + HF remote).
+# The parent monorepo does not track their contents — see .spaces-manifest.json
+# for the canonical list of spaces and their remotes.
+#
+# The spaces/ dir itself is ignored too (no .gitkeep) — each space has its own
+# git checkout with HF remote, and the parent tracks them by manifest, not by
+# directory existence.
+spaces/
+spaces/*/
 spaces/*/.git/
 spaces/*/.gitignore
+
+# Standard Python / Node / HF build artifacts (kept for any other nested repos)
 **/__pycache__/
 **/node_modules/
 **/.venv/
