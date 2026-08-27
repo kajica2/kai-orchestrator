@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "title": "kai-orchestrator spaces manifest",
+  "description": "Canonical list of HF Spaces tracked by this monorepo. Each entry is a separate git checkout under spaces/<name>/ with the listed remotes. The Makefile's sync-* targets operate on these.",
+  "spaces": [
+    {
+      "name": "orchestrator",
+      "hf_url": "https://huggingface.co/spaces/kaidjuric/orchestrator",
+      "sdk": "gradio",
+      "purpose": "Primary orchestrator UI"
+    },
+    {
+      "name": "orchestrator-v2",
+      "hf_url": "https://huggingface.co/spaces/kaidjuric/orchestrator-v2",
+      "sdk": "gradio",
+      "purpose": "V2 variant of orchestrator"
+    },
+    {
+      "name": "daily-pipeline-director-cut",
+      "hf_url": "https://huggingface.co/spaces/kaidjuric/daily-pipeline-director-cut",
+      "sdk": "docker",
+      "purpose": "Daily pipeline automation, director-cut variant"
+    },
+    {
+      "name": "mtm-resource-sweep",
+      "hf_url": "https://huggingface.co/spaces/kaidjuric/mtm-resource-sweep",
+      "sdk": "docker",
+      "purpose": "Resource sweep workflow"
+    },
+    {
+      "name": "mtm-cycle-6",
+      "hf_url": "https://huggingface.co/spaces/kaidjuric/mtm-cycle-6",
+      "sdk": "static",
+      "purpose": "Cycle 6 AMT pipeline demo + pitch detectors + Long Horizon Prompt"
+    },
+    {
+      "name": "agent6",
+      "hf_url": "https://huggingface.co/spaces/kaidjuric/agent6",
+      "sdk": "docker",
+      "purpose": "Agent 6 runtime — breathing supervisor + sub-agent delegation"
+    },
+    {
+      "name": "agi-background-working-system",
+      "hf_url": "https://huggingface.co/spaces/kaidjuric/agi-background-working-system",
+      "sdk": "static",
+      "purpose": "Background working system for AGI"
+    },
+    {
+      "name": "motion-graphic-designer-agi-system",
+      "hf_url": "https://huggingface.co/spaces/kaidjuric/motion-graphic-designer-agi-system",
+      "sdk": "static",
+      "purpose": "Motion graphics designer AGI system"
+    },
+    {
+      "name": "applied-computing-components-system",
+      "hf_url": "https://huggingface.co/spaces/kaidjuric/applied-computing-components-system",
+      "sdk": "static",
+      "purpose": "Applied computing components system"
+    }
+  ]
+}
